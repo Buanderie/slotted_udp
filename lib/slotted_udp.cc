@@ -437,7 +437,7 @@ s_udp_err_t s_udp_wait_for_channel_ready(s_udp_channel_t* channel)
 		
 		usleep(500000);
 	}
-	puts("We have master clock");
+    puts("We have master clock");
 	return S_UDP_OK;
 }
 
@@ -640,9 +640,9 @@ s_udp_err_t s_udp_receive_packet(s_udp_channel_t* channel,
 							 &master_packet_processed);
 
 	if (dec_res != S_UDP_OK) {
-		if (dec_res != S_UDP_TRY_AGAIN)
-			fprintf(stderr, "s_udp_receive_packet(): _decode_header(): %s\n",
-					s_udp_error_string(dec_res));
+//		if (dec_res != S_UDP_TRY_AGAIN)
+//			fprintf(stderr, "s_udp_receive_packet(): _decode_header(): %s\n",
+//					s_udp_error_string(dec_res));
 		return dec_res;
 	}
 

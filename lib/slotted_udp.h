@@ -1,3 +1,6 @@
+#ifndef SLOTTED_UDP_H__
+#define SLOTTED_UDP_H__
+
 /*
    Copyright (C) 2016, Jaguar Land Rover
 
@@ -106,3 +109,5 @@ extern s_udp_err_t s_udp_receive_packet(s_udp_channel_t* channel,
 										uint8_t* packet_loss_detected);
 
 extern s_udp_err_t s_udp_destroy_channel(s_udp_channel_t* channel);
+
+#endif
